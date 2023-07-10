@@ -1,4 +1,4 @@
-# Exemplos de script usando modelos GLM com dados fictícios
+# Exemplo de script usando modelos GLM com dados fictícios
 
 ### Tópicos:
 
