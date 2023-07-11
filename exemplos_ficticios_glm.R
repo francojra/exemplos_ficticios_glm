@@ -16,6 +16,9 @@ modelo1 <- glm(desempenho ~ . * ., data = dados, family = Gamma)
 summary(modelo)
 summary(modelo1)
 
+library(MuMIn)
+dd <- dredge(modelo)
+subset(dd, delta < 4)
 
 # ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -41,3 +44,19 @@ modelo <- glm(formula, data = dados)
 
 # Visualizar os resultados
 summary(modelo)
+
+
+
+
+
+
+# Aplicar a função GLM com todas as combinações
+modelo <- glm(variavel_independente ~ ., data = dados, family = )
+
+# Visualizar os resultados
+summary(modelo)
+
+library(MuMIn)
+selecao_modelo <- dredge(modelo)
+subset(selecao_modelo, delta < 4)
+
